@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background-image: linear-gradient(to right, #FFB8C8,#AED6E8);
+    font-family: "Fredoka", sans-serif;
+}
+:root{
+    --textPadding:3px;
+    --textMargin:0.5rem;
+}
+form{
+    width: 90%;
+    background-color: white;
+    margin: 5rem auto;
+    border-radius: 3px;
+    padding: 2rem;
+}
+h1{
+    /* display: block;
+    width: 60%;
+    margin: 0 auto; */
+    text-align: center;
+    font-weight: 500;
+}
+label:not(.checkBox label),input:not(.checkBox input),textarea{
+    display: block;
+    width: 90%;
+    margin: var(--textMargin) auto;
+    padding: var(--textPadding);
+}
+
+input[type="text"]:focus{
+    outline-color: hotpink;
+}
+ input[type="email"]:focus,
+ textarea:focus{
+    outline-color: blue;
+}
+.checkBox{
+    /* width: 50%;
+    margin: 3px auto; */
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
+.checkBox p{
+    display: inline-block;
+    /* line-height: 1; */
+
+}
+.checkBox input{
+    display: none;
+}
+.checkBox label{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    /* margin: 0; */
+    /* padding: 0; */
+    background-color: rgb(185, 181, 181);
+    /* vertical-align: bottom; */
+    border-radius: 10px;
+    position: relative;
+    /* line-height: 1; */
+    top: 3px;
+}
+.checkBox label::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 3px;
+    transition: left 0.5s ease;
+}
+.checkBox input:checked+label::before{
+    left: 21px;
+}
+button{
+    display: block;
+    width: 8rem;
+    margin: var(--textMargin) auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: var(--textPadding);
+    background-color: white;
+}

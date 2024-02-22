@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <form action="https://upset-seal-belt.cyclic.app/" target="_blank" method="post">
+                <h1>Tell us more</h1>
+
+                <label for="firstName">First name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" minlength="2" maxlength="20" required>
+                <label for="lastName">Last name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" minlength="2" maxlength="20" required>
+                <label for="yourEmail">Your email</label>
+                <input type="email" name="email" id="email" placeholder="Tell us how to contact you" minlength="6" required>
+                <label for="yourInfo">Tell us about yourself</label>
+                <textarea name="yourInfo" id="yourInfo" cols="30" rows="5" required></textarea>
+                <div class="checkBox">
+                    <span>
+                        <p>Want to know more?</p>
+                        <input type="checkbox" name="knowMore" id="knowMore">
+                        <label for="knowMore"></label>
+                    </span>
+                </div>
+                <button type="submit" disabled>Submit</button>
+
+        </form>
+
+</body>
+</html>
